@@ -18,11 +18,11 @@ if args:
 			while count <= list_count:
 				hash = hashlib.new('md4',lines[count].encode('utf-16le')).digest()
 				hash1 = binascii.hexlify(hash)
-				print hash1
 				if hash1 == password:
-					print lines[count]
+					print hash1 + ":%s" % lines[count]
 					exit()
 				else:
+					print hash1
 					count = count + 1
 		elif arg == "-gen":
 			hash_gen = raw_input("Insert string: ")
