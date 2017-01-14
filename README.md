@@ -1,4 +1,4 @@
-# NTLM_Generator_and-_Cracker
+# NTLM_Tools
 Generates and Runs Dictionary attacks againt Windows NTLM Hashes
 
 <br>
